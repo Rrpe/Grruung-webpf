@@ -809,7 +809,7 @@ a:hover {
     }
 }
 
-    .logo {
+.logo {
   display: flex;
   align-items: center;      /* 세로 중앙 정렬 */
   gap: 8px;                 /* 이미지와 텍스트 사이 간격 */
