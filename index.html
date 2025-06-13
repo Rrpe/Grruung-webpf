@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 다마고치 - 감정형 가상 펫 iOS 앱</title>
+    <meta name="description"
+        content="AI 기반 감정형 다마고치를 키우는 iOS 앱입니다. 사용자는 펫과 대화를 나누며 다양한 활동을 통해 스탯을 관리하고, 사진 및 텍스트로 일상을 기록할 수 있습니다.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Apple 스타일의 아이콘과 폰트를 위한 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>구릉이</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#overview">소개</a>
+                    <a href="#features">기능</a>
+                    <a href="#gallery">갤러리</a>
+                    <a href="#team">팀 소개</a>
+                    <a href="#tech">개발 스택</a>
+                    <a href="#reflection">회고</a>
+                    <a href="https://github.com/your-username/ai-tamagotchi" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="container">
+            <a href="#overview">소개</a>
+            <a href="#features">기능</a>
+            <a href="#gallery">갤러리</a>
+            <a href="#team">팀 소개</a>
+            <a href="#tech">개발 스택</a>
+            <a href="#reflection">회고</a>
+            <a href="https://github.com/your-username/ai-tamagotchi" class="github-link" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <!-- 히어로 섹션 -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">AI와 함께 성장하는<br>나만의 가상 펫</h2>
+                    <p class="hero-description">
+                        AI 기술을 활용한 감성형 다마고치 앱으로<br>특별한 반려 경험을 만나보세요
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#features" class="btn btn-primary">주요 기능 살펴보기</a>
+                        <a href="https://github.com/your-username/ai-tamagotchi" class="btn btn-secondary"
+                            target="_blank">
+                            <i class="fab fa-github"></i> GitHub 방문하기
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/homeview.png" alt="AI 다마고치 홈 화면" class="main-screenshot">
+                </div>
+            </div>
+        </section>
+
+        <!-- 개요 섹션 -->
+        <section id="overview" class="overview section">
+            <div class="container">
+                <h2 class="section-title">프로젝트 개요</h2>
+                <div class="card overview-card">
+                    <div class="card-content">
+                        <p>
+                            AI 기반 감정형 다마고치를 키우는 iOS 앱입니다.
+                            사용자는 펫과 대화를 나누며 다양한 활동을 통해 스탯을 관리하고,
+                            사진 및 텍스트로 일상을 기록할 수 있습니다.
+                        </p>
+                        <p>
+                            사용자와 AI 펫 사이의 감정적 유대감을 형성하여,
+                            단순한 게임을 넘어선 의미 있는 인터랙션 경험을 제공합니다.
+                            펫은 사용자와의 대화 내용을 기억하고, 감정 상태와 성장 단계에 따라
+                            다양한 반응을 보여주어 실제 반려동물을 키우는 듯한 경험을 선사합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 주요 기능 섹션 -->
+        <section id="features" class="features section">
+            <div class="container">
+                <h2 class="section-title">주요 기능</h2>
+                <div class="features-grid">
+                    <!-- 성장 시스템 -->
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>다마고치 성장 시스템</h3>
+                        <p>유아기부터 노년기까지 다양한 성장 단계를 경험하며, 각 단계별로 펫의 외형과 성격이 변화합니다.</p>
+                    </div>
+
+                    <!-- AI 대화 -->
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <h3>Vertex AI와의 대화</h3>
+                        <p>Google Vertex AI 기반 자연어 처리로 펫과 자연스러운 대화를 나누며 감정적 교류가 가능합니다.</p>
+                    </div>
+
+                    <!-- 일기 저장 -->
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>사진/텍스트 일기 저장</h3>
+                        <p>펫과의 특별한 순간을 사진과 텍스트로 기록하고, 날짜별로 저장하여 성장 과정을 되돌아볼 수 있습니다.</p>
+                    </div>
+
+                    <!-- 스탯 시스템 -->
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>헬스케어/스탯/이벤트 시스템</h3>
+                        <p>배고픔, 행복도, 건강 등 다양한 스탯을 관리하고, 특별 이벤트를 통해 펫과의 유대감을 강화합니다.</p>
+                    </div>
+
+                    <!-- 상점 시스템 -->
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>상점(BM 시스템)</h3>
+                        <p>게임 내 통화로 다양한 아이템을 구매하여 펫의 환경을 꾸미고, 부가 기능을 활성화할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 갤러리 섹션 -->
+        <section id="gallery" class="gallery section">
+            <div class="container">
+                <h2 class="section-title">앱 이미지 갤러리</h2>
+
+                <!-- 갤러리 탭 메뉴 -->
+                <div class="gallery-tabs">
+                    <button class="tab-btn active" data-tab="home">홈 & 메인</button>
+                    <button class="tab-btn" data-tab="growth">성장 단계</button>
+                    <button class="tab-btn" data-tab="interaction">상호작용</button>
+                    <button class="tab-btn" data-tab="character">캐릭터 관리</button>
+                    <button class="tab-btn" data-tab="shop">상점 시스템</button>
+                    <button class="tab-btn" data-tab="settings">사용자 설정</button>
+                </div>
+
+                <!-- 홈 & 메인 기능 탭 -->
+                <div class="tab-content active" id="home-tab">
+                    <h3 class="tab-title">홈 & 메인 기능</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="assets/homeview.png" alt="홈 화면" class="gallery-image">
+                            <div class="gallery-caption">홈 화면</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/inventory.png" alt="인벤토리 관리" class="gallery-image">
+                            <div class="gallery-caption">인벤토리 관리</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/health.png" alt="건강 관리 시스템" class="gallery-image">
+                            <div class="gallery-caption">건강 관리 시스템</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/special_event.png" alt="특수 이벤트" class="gallery-image">
+                            <div class="gallery-caption">특수 이벤트</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 성장 단계 탭 -->
+                <div class="tab-content" id="growth-tab">
+                    <h3 class="tab-title">캐릭터 성장 단계</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="assets/infant.png" alt="유아기 캐릭터" class="gallery-image">
+                            <div class="gallery-caption">유아기</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/child.png" alt="소아기 캐릭터" class="gallery-image">
+                            <div class="gallery-caption">소아기</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/teen.png" alt="청년기 캐릭터" class="gallery-image">
+                            <div class="gallery-caption">청년기</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/adult.png" alt="성년기 캐릭터" class="gallery-image">
+                            <div class="gallery-caption">성년기</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/elder.png" alt="노년기 캐릭터" class="gallery-image">
+                            <div class="gallery-caption">노년기</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 상호작용 탭 -->
+                <div class="tab-content" id="interaction-tab">
+                    <h3 class="tab-title">상호작용 기능</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="assets/chatview.png" alt="AI 대화 화면" class="gallery-image">
+                            <div class="gallery-caption">AI 대화</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/diaryview.png" alt="일기 작성 화면" class="gallery-image">
+                            <div class="gallery-caption">일기 작성</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/meteor.png" alt="운석 이벤트" class="gallery-image">
+                            <div class="gallery-caption">운석 이벤트</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 캐릭터 관리 탭 -->
+                <div class="tab-content" id="character-tab">
+                    <h3 class="tab-title">캐릭터 관리</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="assets/character_list.png" alt="캐릭터 목록" class="gallery-image">
+                            <div class="gallery-caption">캐릭터 목록</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/character_detail.png" alt="캐릭터 상세 정보" class="gallery-image">
+                            <div class="gallery-caption">캐릭터 상세 정보</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 상점 시스템 탭 -->
+                <div class="tab-content" id="shop-tab">
+                    <h3 class="tab-title">상점 시스템</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="assets/shopview.png" alt="상점 메인 화면" class="gallery-image">
+                            <div class="gallery-caption">상점 메인</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/shop_detail.png" alt="상품 상세 정보" class="gallery-image">
+                            <div class="gallery-caption">상품 상세</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/purchase.png" alt="구매 프로세스" class="gallery-image">
+                            <div class="gallery-caption">구매 프로세스</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 사용자 설정 탭 -->
+                <div class="tab-content" id="settings-tab">
+                    <h3 class="tab-title">사용자 설정</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="assets/mypage.png" alt="마이페이지" class="gallery-image">
+                            <div class="gallery-caption">마이페이지</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/settings.png" alt="설정 화면" class="gallery-image">
+                            <div class="gallery-caption">설정 화면</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 
+                갤러리 확장 방법:
+                
+                1. 새 탭 추가하기:
+                - gallery-tabs에 새 버튼 추가: <button class="tab-btn" data-tab="새탭ID">새 탭 이름</button>
+                - 아래 형식으로 새 탭 콘텐츠 추가:
+                
+                <div class="tab-content" id="새탭ID-tab">
+                    <h3 class="tab-title">새 탭 제목</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="assets/이미지파일.png" alt="이미지 설명" class="gallery-image">
+                            <div class="gallery-caption">이미지 캡션</div>
+                        </div>
+                        <!-- 추가 gallery-item 반복 -->
+            </div>
+            </div>
+
+            2. 기존 탭에 이미지 추가하기:
+            - 원하는 탭의 gallery-container 안에 아래 코드 추가:
+
+            <div class="gallery-item">
+                <img src="assets/이미지파일명.png" alt="이미지 설명" class="gallery-image">
+                <div class="gallery-caption">이미지 캡션</div>
+            </div>
+
+            3. GIF 사용하기:
+            - 이미지와 동일한 방식으로 사용하되 파일 확장자만 .gif로 변경:
+            <img src="assets/애니메이션.gif" alt="GIF 설명" class="gallery-image">
+            -->
+
+            <!-- 이미지 모달 -->
+            <div class="gallery-modal" id="gallery-modal">
+                <span class="modal-close">&times;</span>
+                <img class="modal-content" id="modal-img">
+                <div class="modal-caption" id="modal-caption"></div>
+            </div>
+            </div>
+        </section>
+
+        <!-- 팀 구성 섹션 -->
+        <section id="team" class="team section">
+            <div class="container">
+                <h2 class="section-title">팀 구성</h2>
+                <div class="card team-card">
+                    <table class="team-table">
+                        <thead>
+                            <tr>
+                                <th>이름</th>
+                                <th>역할</th>
+                                <th>GitHub</th>
+                                <th>이메일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>홍길동</td>
+                                <td>PM / UI 디자인</td>
+                                <td><a href="https://github.com/username1" target="_blank">@username1</a></td>
+                                <td>email1@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>김철수</td>
+                                <td>iOS 개발</td>
+                                <td><a href="https://github.com/username2" target="_blank">@username2</a></td>
+                                <td>email2@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>이영희</td>
+                                <td>백엔드 / Firebase</td>
+                                <td><a href="https://github.com/username3" target="_blank">@username3</a></td>
+                                <td>email3@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>박지민</td>
+                                <td>AI 모델링 / 3D 모델링</td>
+                                <td><a href="https://github.com/username4" target="_blank">@username4</a></td>
+                                <td>email4@example.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 개발 스택 섹션 -->
+        <section id="tech" class="tech section">
+            <div class="container">
+                <h2 class="section-title">개발 스택</h2>
+                <div class="tech-badges">
+                    <h3>개발 언어 및 프레임워크</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/swift-F05138?style=for-the-badge&logo=swift&logoColor=white"
+                            alt="Swift" style="border-radius:10px">
+                        <img src="https://img.shields.io/badge/swift ui-F05138?style=for-the-badge&logo=swift&logoColor=white"
+                            alt="Swift UI" style="border-radius:10px">
+                    </div>
+
+                    <h3>백엔드 및 데이터베이스</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white"
+                            alt="Firebase" style="border-radius:10px">
+                    </div>
+
+                    <h3>AI 기술</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/vertex ai-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white"
+                            alt="Vertex AI" style="border-radius:10px">
+                    </div>
+
+                    <h3>버전 관리 및 협업</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"
+                            alt="Git" style="border-radius:10px">
+                        <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"
+                            alt="GitHub" style="border-radius:10px">
+                    </div>
+
+                    <h3>아키텍처 패턴</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/MVVM-0078D7?style=for-the-badge&logo=microsoft&logoColor=white"
+                            alt="MVVM" style="border-radius:10px">
+                    </div>
+
+                    <h3>디자인 및 모델링</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white"
+                            alt="Blender" style="border-radius:10px">
+                    </div>
+
+                    <h3>협업 도구</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"
+                            alt="Notion" style="border-radius:10px">
+                        <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"
+                            alt="Figma" style="border-radius:10px">
+                        <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"
+                            alt="Discord" style="border-radius:10px">
+                    </div>
+                </div>
+
+                <div class="tech-details">
+                    <div class="card tech-detail-card">
+                        <h3>앱 아키텍처</h3>
+                        <p>Swift와 SwiftUI를 기반으로 MVVM 패턴을 적용하여 코드의 유지보수성과 테스트 용이성을 높였습니다. 데이터 바인딩과 상태 관리를 효율적으로 구현했습니다.
+                        </p>
+                    </div>
+
+                    <div class="card tech-detail-card">
+                        <h3>백엔드 구성</h3>
+                        <p>Firebase를 활용하여 사용자 인증, 실시간 데이터베이스, 스토리지를 구현했습니다. 서버리스 아키텍처로 빠른 개발과 안정적인 서비스를 제공합니다.</p>
+                    </div>
+
+                    <div class="card tech-detail-card">
+                        <h3>AI 대화 시스템</h3>
+                        <p>Google Vertex AI를 이용한 자연어 처리로 사용자와 다마고치 간의 감성적 대화를 구현했습니다. 감정 상태에 따른 응답 생성 로직을 개발했습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 회고 및 한계 섹션 -->
+        <section id="reflection" class="reflection section">
+            <div class="container">
+                <h2 class="section-title">회고 및 한계</h2>
+                <div class="card reflection-card">
+                    <div class="reflection-item">
+                        <h3><i class="fas fa-exclamation-circle"></i> 실시간 처리 어려움</h3>
+                        <p>AI 응답 생성 시 지연 시간으로 인한 UX 저하 문제가 있었습니다. 향후 캐싱 및 최적화를 통해 개선할 예정입니다.</p>
+                    </div>
+                    <div class="reflection-item">
+                        <h3><i class="fas fa-paint-brush"></i> UI 미완성</h3>
+                        <p>일부 화면의 UI가 완성되지 않아 사용자 경험이 일관적이지 않은 부분이 있습니다. 디자인 시스템 구축으로 해결할 계획입니다.</p>
+                    </div>
+                    <div class="reflection-item">
+                        <h3><i class="fas fa-clone"></i> 중복 펫 생성 처리 문제</h3>
+                        <p>특정 상황에서 펫이 중복 생성되는 버그가 있었습니다. 데이터 모델 및 상태 관리 로직을 개선하여 해결 중입니다.</p>
+                    </div>
+                    <div class="reflection-item">
+                        <h3><i class="fas fa-pause-circle"></i> 앱 멈춤 현상</h3>
+                        <p>대용량 데이터 처리 시 메인 스레드 블로킹으로 인한 앱 멈춤 현상이 발생했습니다. 비동기 처리 로직을 강화할 예정입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Made with <i class="fas fa-heart"></i> by Team AI 다마고치</p>
+            <div class="footer-links">
+                <a href="https://github.com/your-username/ai-tamagotchi" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fas fa-envelope"></i> 연락처
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
