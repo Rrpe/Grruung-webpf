@@ -808,3 +808,20 @@ a:hover {
         font-size: 1.1rem;
     }
 }
+
+    .logo {
+  display: flex;
+  align-items: center;      /* 세로 중앙 정렬 */
+  gap: 8px;                 /* 이미지와 텍스트 사이 간격 */
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;                /* h1 기본 마진 제거 */
+}

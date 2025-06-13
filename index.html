@@ -22,7 +22,9 @@
         <div class="container">
             <nav class="nav">
                 <div class="logo">
-                    <h1>구릉이</h1>
+                    <img src="assets/icon01.png" alt="구릉이 아이콘"
+                        style="width: 44px; height: 44px; vertical-align: middle; margin-right: 8px;">
+                    <h1 class="logo-text">구릉이</h1>
                 </div>
                 <div class="nav-links">
                     <a href="#overview">소개</a>
@@ -31,7 +33,7 @@
                     <a href="#team">팀 소개</a>
                     <a href="#tech">개발 스택</a>
                     <a href="#reflection">회고</a>
-                    <a href="https://github.com/your-username/ai-tamagotchi" class="github-link" target="_blank">
+                    <a href="https://github.com/APP-iOS7/Grruung" class="github-link" target="_blank">
                         <i class="fab fa-github"></i> GitHub
                     </a>
                 </div>
@@ -50,7 +52,7 @@
             <a href="#team">팀 소개</a>
             <a href="#tech">개발 스택</a>
             <a href="#reflection">회고</a>
-            <a href="https://github.com/your-username/ai-tamagotchi" class="github-link" target="_blank">
+            <a href="https://github.com/APP-iOS7/Grruung" class="github-link" target="_blank">
                 <i class="fab fa-github"></i> GitHub
             </a>
         </div>
@@ -67,14 +69,13 @@
                     </p>
                     <div class="hero-cta">
                         <a href="#features" class="btn btn-primary">주요 기능 살펴보기</a>
-                        <a href="https://github.com/your-username/ai-tamagotchi" class="btn btn-secondary"
-                            target="_blank">
+                        <a href="https://github.com/APP-iOS7/Grruung" class="btn btn-secondary" target="_blank">
                             <i class="fab fa-github"></i> GitHub 방문하기
                         </a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/homeview.png" alt="AI 다마고치 홈 화면" class="main-screenshot">
+                    <img src="assets/homeview.png" alt="AI 다마고치 목업 화면" class="main-screenshot">
                 </div>
             </div>
         </section>
@@ -149,6 +150,81 @@
                         </div>
                         <h3>상점(BM 시스템)</h3>
                         <p>게임 내 통화로 다양한 아이템을 구매하여 펫의 환경을 꾸미고, 부가 기능을 활성화할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 개발 스택 섹션 -->
+        <section id="tech" class="tech section">
+            <div class="container">
+                <h2 class="section-title">개발 스택</h2>
+                <div class="tech-badges">
+                    <h3>개발 언어 및 프레임워크</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/swift-F05138?style=for-the-badge&logo=swift&logoColor=white"
+                            alt="Swift" style="border-radius:10px">
+                        <img src="https://img.shields.io/badge/swift ui-F05138?style=for-the-badge&logo=swift&logoColor=white"
+                            alt="Swift UI" style="border-radius:10px">
+                    </div>
+
+                    <h3>백엔드 및 데이터베이스</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white"
+                            alt="Firebase" style="border-radius:10px">
+                    </div>
+
+                    <h3>AI 기술</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/vertex ai-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white"
+                            alt="Vertex AI" style="border-radius:10px">
+                    </div>
+
+                    <!-- <h3>버전 관리 및 협업</h3> -->
+                    <!--
+                    <h3>아키텍처 패턴</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/MVVM-0078D7?style=for-the-badge&logo=microsoft&logoColor=white"
+                            alt="MVVM" style="border-radius:10px">
+                    </div>
+                    -->
+                    <h3>디자인 및 모델링</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white"
+                            alt="Blender" style="border-radius:10px">
+                    </div>
+
+                    <h3>버전 관리 및 협업 도구</h3>
+                    <div class="badge-group">
+                        <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"
+                            alt="Git" style="border-radius:10px">
+                        <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"
+                            alt="GitHub" style="border-radius:10px">
+                        <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"
+                            alt="Notion" style="border-radius:10px">
+                        <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"
+                            alt="Figma" style="border-radius:10px">
+                        <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"
+                            alt="Discord" style="border-radius:10px">
+                    </div>
+                </div>
+
+                <div class="tech-details">
+                    <div class="card tech-detail-card">
+                        <h3>앱 아키텍처</h3>
+                        <p>Swift와 SwiftUI를 기반으로 MVVM 패턴을 적용하여 코드의 유지보수성과 테스트 용이성을 높였습니다. 데이터 바인딩과 상태 관리를 효율적으로 구현했습니다.
+                        </p>
+                    </div>
+
+                    <div class="card tech-detail-card">
+                        <h3>백엔드 구성</h3>
+                        <p>Firebase를 활용하여 사용자 인증, 실시간 데이터베이스, 스토리지를 구현했습니다. 서버리스 아키텍처로 빠른 개발과 안정적인 서비스를 제공합니다.</p>
+                    </div>
+
+                    <div class="card tech-detail-card">
+                        <h3>AI 대화 시스템</h3>
+                        <p>Google Vertex AI를 이용한 자연어 처리로 사용자와 다마고치 간의 감성적 대화를 구현했습니다. 감정 상태에 따른 응답 생성 로직을 개발했습니다.</p>
                     </div>
                 </div>
             </div>
@@ -301,7 +377,7 @@
                             <img src="assets/이미지파일.png" alt="이미지 설명" class="gallery-image">
                             <div class="gallery-caption">이미지 캡션</div>
                         </div>
-                        <!-- 추가 gallery-item 반복 -->
+                        <!-- 추가 gallery-item 반복 
             </div>
             </div>
 
@@ -318,12 +394,12 @@
             <img src="assets/애니메이션.gif" alt="GIF 설명" class="gallery-image">
             -->
 
-            <!-- 이미지 모달 -->
-            <div class="gallery-modal" id="gallery-modal">
-                <span class="modal-close">&times;</span>
-                <img class="modal-content" id="modal-img">
-                <div class="modal-caption" id="modal-caption"></div>
-            </div>
+                <!-- 이미지 모달 -->
+                <div class="gallery-modal" id="gallery-modal">
+                    <span class="modal-close">&times;</span>
+                    <img class="modal-content" id="modal-img">
+                    <div class="modal-caption" id="modal-caption"></div>
+                </div>
             </div>
         </section>
 
@@ -343,107 +419,43 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>홍길동</td>
+                                <td>고지용</td>
                                 <td>PM / UI 디자인</td>
                                 <td><a href="https://github.com/username1" target="_blank">@username1</a></td>
                                 <td>email1@example.com</td>
                             </tr>
                             <tr>
-                                <td>김철수</td>
+                                <td>김준수</td>
                                 <td>iOS 개발</td>
                                 <td><a href="https://github.com/username2" target="_blank">@username2</a></td>
                                 <td>email2@example.com</td>
                             </tr>
                             <tr>
-                                <td>이영희</td>
+                                <td>노성경</td>
                                 <td>백엔드 / Firebase</td>
                                 <td><a href="https://github.com/username3" target="_blank">@username3</a></td>
                                 <td>email3@example.com</td>
                             </tr>
                             <tr>
-                                <td>박지민</td>
+                                <td>박민우</td>
                                 <td>AI 모델링 / 3D 모델링</td>
                                 <td><a href="https://github.com/username4" target="_blank">@username4</a></td>
                                 <td>email4@example.com</td>
                             </tr>
+                            <tr>
+                                <td>심연아</td>
+                                <td>AI 모델링 / 3D 모델링</td>
+                                <td><a href="https://github.com/username4" target="_blank">@username5</a></td>
+                                <td>email5@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>천수빈</td>
+                                <td>AI 모델링 / 3D 모델링</td>
+                                <td><a href="https://github.com/username4" target="_blank">@username6</a></td>
+                                <td>email6@example.com</td>
+                            </tr>
                         </tbody>
                     </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- 개발 스택 섹션 -->
-        <section id="tech" class="tech section">
-            <div class="container">
-                <h2 class="section-title">개발 스택</h2>
-                <div class="tech-badges">
-                    <h3>개발 언어 및 프레임워크</h3>
-                    <div class="badge-group">
-                        <img src="https://img.shields.io/badge/swift-F05138?style=for-the-badge&logo=swift&logoColor=white"
-                            alt="Swift" style="border-radius:10px">
-                        <img src="https://img.shields.io/badge/swift ui-F05138?style=for-the-badge&logo=swift&logoColor=white"
-                            alt="Swift UI" style="border-radius:10px">
-                    </div>
-
-                    <h3>백엔드 및 데이터베이스</h3>
-                    <div class="badge-group">
-                        <img src="https://img.shields.io/badge/firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white"
-                            alt="Firebase" style="border-radius:10px">
-                    </div>
-
-                    <h3>AI 기술</h3>
-                    <div class="badge-group">
-                        <img src="https://img.shields.io/badge/vertex ai-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white"
-                            alt="Vertex AI" style="border-radius:10px">
-                    </div>
-
-                    <h3>버전 관리 및 협업</h3>
-                    <div class="badge-group">
-                        <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"
-                            alt="Git" style="border-radius:10px">
-                        <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"
-                            alt="GitHub" style="border-radius:10px">
-                    </div>
-
-                    <h3>아키텍처 패턴</h3>
-                    <div class="badge-group">
-                        <img src="https://img.shields.io/badge/MVVM-0078D7?style=for-the-badge&logo=microsoft&logoColor=white"
-                            alt="MVVM" style="border-radius:10px">
-                    </div>
-
-                    <h3>디자인 및 모델링</h3>
-                    <div class="badge-group">
-                        <img src="https://img.shields.io/badge/blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white"
-                            alt="Blender" style="border-radius:10px">
-                    </div>
-
-                    <h3>협업 도구</h3>
-                    <div class="badge-group">
-                        <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"
-                            alt="Notion" style="border-radius:10px">
-                        <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"
-                            alt="Figma" style="border-radius:10px">
-                        <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"
-                            alt="Discord" style="border-radius:10px">
-                    </div>
-                </div>
-
-                <div class="tech-details">
-                    <div class="card tech-detail-card">
-                        <h3>앱 아키텍처</h3>
-                        <p>Swift와 SwiftUI를 기반으로 MVVM 패턴을 적용하여 코드의 유지보수성과 테스트 용이성을 높였습니다. 데이터 바인딩과 상태 관리를 효율적으로 구현했습니다.
-                        </p>
-                    </div>
-
-                    <div class="card tech-detail-card">
-                        <h3>백엔드 구성</h3>
-                        <p>Firebase를 활용하여 사용자 인증, 실시간 데이터베이스, 스토리지를 구현했습니다. 서버리스 아키텍처로 빠른 개발과 안정적인 서비스를 제공합니다.</p>
-                    </div>
-
-                    <div class="card tech-detail-card">
-                        <h3>AI 대화 시스템</h3>
-                        <p>Google Vertex AI를 이용한 자연어 처리로 사용자와 다마고치 간의 감성적 대화를 구현했습니다. 감정 상태에 따른 응답 생성 로직을 개발했습니다.</p>
-                    </div>
                 </div>
             </div>
         </section>
