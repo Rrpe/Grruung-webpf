@@ -1029,3 +1029,311 @@ a:hover {
   font-weight: bold;
   margin: 0;                /* h1 기본 마진 제거 */
 }
+
+/* 팀 구성 섹션 스타일 */
+.team.section {
+    padding: 80px 0;
+    background-color: var(--background-color);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+}
+
+/* 팀 카드 그리드 스타일 */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* 팀 카드 스타일 */
+.team-card {
+    position: relative;
+    background-color: var(--card-background);
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 카드 배너 */
+.card-banner {
+    background: linear-gradient(135deg, var(--primary-color), #FFA047);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.team-avatar {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: white;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-avatar {
+    transform: scale(1.1);
+}
+
+/* 카드 본문 */
+.card-body {
+    padding: 25px;
+    text-align: center;
+}
+
+.card-body h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.team-role {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.team-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.team-contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.team-contact a:hover {
+    color: var(--primary-color);
+}
+
+.team-contact a i {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+/* 오버레이 효과 */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(238, 140, 41, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.team-card:hover .card-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay-content {
+    text-align: center;
+    color: white;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.team-card:hover .overlay-content {
+    transform: translateY(0);
+}
+
+.overlay-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.overlay-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+/* 미디어 쿼리 - 반응형 스타일 */
+@media (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+    }
+    
+    .card-banner {
+        height: 130px;
+    }
+    
+    .team-avatar {
+        width: 90px;
+        height: 90px;
+        font-size: 2.2rem;
+    }
+    
+    .card-body {
+        padding: 20px 15px;
+    }
+    
+    .card-body h3 {
+        font-size: 1.3rem;
+    }
+    
+    .team-role {
+        font-size: 0.9rem;
+    }
+    
+    .overlay-content h3 {
+        font-size: 1.6rem;
+    }
+    
+    .overlay-content p {
+        font-size: 1rem;
+    }
+    
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+    }
+    
+    .card-banner {
+        height: 110px;
+    }
+    
+    .team-avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+    
+    .card-body {
+        padding: 15px 10px;
+    }
+    
+    .card-body h3 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    
+    .team-role {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .team-contact {
+        gap: 8px;
+    }
+    
+    .team-contact a {
+        font-size: 0.8rem;
+    }
+    
+    .team-contact a i {
+        font-size: 1rem;
+    }
+    
+    .overlay-content h3 {
+        font-size: 1.4rem;
+    }
+    
+    .overlay-content p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
+}
+
+/* 터치 디바이스를 위한 추가 스타일 */
+@media (hover: none) {
+    .card-overlay {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .team-card.touched .card-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .team-card.touched .overlay-content {
+        transform: translateY(0);
+    }
+}
