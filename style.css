@@ -971,20 +971,37 @@ a:hover {
     }
     
     .features-grid,
-    .gallery-container,
     .tech-details {
         grid-template-columns: 1fr;
         gap: 20px;
     }
     
+    /* 갤러리 컨테이너 가로 스크롤 */
     .gallery-container {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px 5px 20px;
+        margin: 0 -5px 30px;
+        scroll-padding: 0 20px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .gallery-container::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge */
     }
     
     .gallery-item {
-        width: 100%;
+        flex: 0 0 auto;
+        width: 220px;
+        margin-bottom: 5px;
+    }
+    
+    .gallery-image {
+        aspect-ratio: 9/16;
     }
     
     .footer-links {
