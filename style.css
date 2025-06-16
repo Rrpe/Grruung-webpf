@@ -1425,3 +1425,10 @@ a:hover {
 .hero-slider:hover .main-screenshot {
     transform: scale(1.02);
 }
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
