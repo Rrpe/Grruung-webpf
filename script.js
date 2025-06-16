@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 초기 화면에 보이는 요소들 애니메이션 실행
     handleScrollAnimation();
 
+    // 히어로 슬라이더 설정
+    setupHeroSlider();
+
     // 갤러리 이미지 로드 완료 후 애니메이션 적용
     const galleryImages = document.querySelectorAll('.gallery-image');
     galleryImages.forEach(img => {
@@ -184,6 +187,64 @@ function throttle(callback, limit) {
         }
     };
 }
+
+// 히어로 슬라이더 기능
+function setupHeroSlider() {
+    const slides = document.querySelectorAll('.hero-slide');
+    const indicators = document.querySelectorAll('.indicator');
+
+    if (slides.length <= 1) return; // 슬라이드가 1개 이하면 실행하지 않음
+
+    let currentSlide = 0;
+    let sliderInterval;
+
+    // 슬라이드 변경 함수
+    function changeSlide(index) {
+        // 현재 활성화된 슬라이드와 인디케이터 비활성화
+        slides[currentSlide].classList.remove('active');
+        indicators[currentSlide].classList.remove('active');
+
+        // 새 슬라이드와 인디케이터 활성화
+        currentSlide = index;
+        if (currentSlide >= slides.length) currentSlide = 0;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+
+        slides[currentSlide].classList.add('active');
+        indicators[currentSlide].classList.add('active');
+    }
+
+    // 자동 슬라이드 시작
+    function startSlideShow() {
+        sliderInterval = setInterval(() => {
+            changeSlide(currentSlide + 1);
+        }, 5000); // 5초마다 슬라이드 변경
+    }
+
+    // 슬라이드 쇼 정지
+    function stopSlideShow() {
+        clearInterval(sliderInterval);
+    }
+
+    // 인디케이터 클릭 이벤트
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            stopSlideShow();
+            changeSlide(index);
+            startSlideShow();
+        });
+    });
+
+    // 슬라이더에 마우스 올렸을 때 자동 전환 정지
+    const heroSlider = document.querySelector('.hero-slider');
+    if (heroSlider) {
+        heroSlider.addEventListener('mouseenter', stopSlideShow);
+        heroSlider.addEventListener('mouseleave', startSlideShow);
+    }
+
+    // 자동 슬라이드 시작
+    startSlideShow();
+}
+
 
 // 스크롤 부드럽게 처리
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
